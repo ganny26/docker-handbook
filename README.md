@@ -11,8 +11,10 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
   - docker run <image>
   - docker start <name|id>
   - docker stop <name|id>
-  - docker ps [-a include stopped containers]
+  - docker ps [-a include stopped containers] - to list all docker containers
   - docker rm <name|id>
+  - docker build -t <your username>/<app_name> .
+  
   
 ### Installation
     - Download docker toolbox
