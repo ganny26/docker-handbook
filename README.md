@@ -24,4 +24,4 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
     
 ### Terminal 
 
-![Alt text](terminal.png "https://www.docker.com")
+![Alt text](terminal.PNG "https://www.docker.com")
