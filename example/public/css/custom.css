@@ -1,0 +1,21 @@
+nav {
+    background-color: #3f51b5;
+}
+
+.brand-logo {
+    margin-left: 25px !important;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #3f51b5 !important;
+    text-align: center;
+}
+
+.footer-copyright {
+    background-color: #3f51b5 !important;
+}

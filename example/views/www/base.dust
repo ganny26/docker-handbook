@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Express WebApp</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo left">Express JS Boilerplate</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="link1">Link1</a></li>
+                <li><a href="link2">Link2</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        {+bodyContent/}
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Made with Dust JS</h5>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="/link1">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="/link2">Link 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+</body>
+
+</html>
