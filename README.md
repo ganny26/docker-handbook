@@ -44,3 +44,12 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
     EXPOSE <port> 
     CMD -a arga value -b argb-value
     ```
+   
+  ### Below docker file is used to run static html files in ngnix server
+  
+    ```
+    FROM nginx:1.11-alpine
+    COPY index.html /usr/share/nginx/html/index.html
+    EXPOSE 80
+    CMD ["nginx", "-g", "daemon off;"]
+    ```
