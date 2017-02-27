@@ -29,4 +29,7 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
 # Launching Containers
 
   - To search images
-  ```docker search --filter=stars=3 hello
+  ```sh
+  docker search --filter=stars=3 hello
+  ```
+ 
