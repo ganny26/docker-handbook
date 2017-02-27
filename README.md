@@ -35,7 +35,8 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
 # Build container image
 
   - To build a docker image first we need to create a file "Docker"
-  - This file consist of four major commands
+  ### This file consist of four major commands
+  
     ```
     FROM <image-name>:<tag>
     RUN <command> 
