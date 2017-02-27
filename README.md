@@ -46,10 +46,26 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
     ```
    
   ### Below docker file is used to run static html files in ngnix server
-  
+   
+   #### Ngnix Server
+    
     ```
     FROM nginx:1.11-alpine
     COPY index.html /usr/share/nginx/html/index.html
     EXPOSE 80
     CMD ["nginx", "-g", "daemon off;"]
     ```
+    #### Node Server
+    
+     ```
+     FROM node:boron
+     RUN mkdir -p /usr/src/app
+     WORKDIR /usr/src/app
+     COPY package.json /usr/src/app/
+     RUN npm install
+     COPY . /usr/src/app
+     EXPOSE 8080
+     CMD [ "npm", "start" ]
+    ```
+ 
+ 
