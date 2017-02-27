@@ -29,7 +29,17 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
 # Launching Containers
 
   - To search images
-  ```sh
+  ```
   docker search --filter=stars=3 hello
   ```
- 
+# Build container image
+
+  - To build a docker image first we need to create a file "Docker"
+  - This file consist of four major commands
+    ```
+    FROM <image-name>:<tag>
+    RUN <command> 
+    COPY <src> <dest> 
+    EXPOSE <port> 
+    CMD -a arga value -b argb-value
+    ```
