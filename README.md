@@ -67,5 +67,23 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
      EXPOSE 8080
      CMD [ "npm", "start" ]
     ```
- 
- 
+    
+   
+  # Build and running image into container
+
+  - After creation of docker file run command to take a build of image 
+    ```
+    docker build -t <any-name> .
+    ```
+    
+  - To verify run below command this will list image with given name
+    ```
+    docker images
+    
+    REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+    my-nodejs-app                 latest              50bdaca3105f        11 hours ago        667 MB
+    node                          boron               e0fb852254e6        5 days ago          659 MB
+    jenkins                       latest              ee06af673de2        2 weeks ago         713 MB
+    kitematic/hello-world-nginx   latest              03b4557ad7b9        20 months ago       7.91 MB
+    
+    ```
