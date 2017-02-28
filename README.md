@@ -87,3 +87,28 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
     kitematic/hello-world-nginx   latest              03b4557ad7b9        20 months ago       7.91 MB
     
     ```
+    
+  - Below command launch the built image is 
+    ```
+    docker run -d --name my-running-app -p 3000:3000 my-nodejs-app  
+    ```
+    
+  - After running above command go to tcp url with port 3000 
+    ```
+    192.168.99.100:32768
+    
+    or
+    
+    curl 192.168.99.100:32768
+    ```
+    
+  - To verify build is present in container 
+    ```
+    $ docker ps
+
+    CONTAINER ID        IMAGE                  COMMAND             CREATED             STATUS              PORTS                     NAMES
+    df289bf2768a        my-nodejs-app:latest   "npm start"         2 minutes ago       Up 2 minutes        0.0.0.0:32768->7899/tcp   my-nodejs-app-2
+    ```
+  
+  
+  
