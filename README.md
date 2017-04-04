@@ -6,6 +6,11 @@
 
 Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications, whether on laptops, data center VMs, or the cloud.
 
+# Installation
+  - Install docket toolbox with kinematic https://www.docker.com/products/docker-toolbox
+  - after installation in some machines virtualization need to enabled follow below link            https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/
+  - Now start docker console
+
 # Basic docker commands
 
   - docker run <image>
