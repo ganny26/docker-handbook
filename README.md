@@ -61,17 +61,17 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
     EXPOSE 80
     CMD ["nginx", "-g", "daemon off;"]
     ```
-    #### Node Server
+   #### Node Server
     
-     ```
-     FROM node:boron
-     RUN mkdir -p /usr/src/app
-     WORKDIR /usr/src/app
-     COPY package.json /usr/src/app/
-     RUN npm install
-     COPY . /usr/src/app
-     EXPOSE 8080
-     CMD [ "npm", "start" ]
+    ```
+    FROM node:boron
+    RUN mkdir -p /usr/src/app
+    WORKDIR /usr/src/app
+    COPY package.json /usr/src/app/
+    RUN npm install
+    COPY . /usr/src/app
+    EXPOSE 8080
+    CMD [ "npm", "start" ]
     ```
     
    
@@ -118,9 +118,9 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
   
   
   ### Troubleshooting
-  
-	#### Docker daemon port (usually <ip>:2376), may not work properly.
-
+   
+   #### Docker daemon port (usually <ip>:2376), may not work properly.
+    
 	- To resolve this do following steps , Goto  Virtualbox > Preferences -> Network -> Host-only Network and remove all adapters listed.
 	  
 	- Remove existing docker machine 
@@ -135,9 +135,15 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
 		```
 		eval "$(docker-machine env default)"
 		```    
-  
+
 	
-	  #### Windows Docker daemon not started after machine restart 
+   #### Windows Docker daemon not started after machine restart 
+   
+    - docker-machine regenerate-certs default
+	- docker-machine restart default
+	- eval $(docker-machine env default)
+	- docker-machine ls
+
   
 	    
     
