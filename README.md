@@ -118,22 +118,28 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
   
   
   ### Troubleshooting
-  - Docker daemon port (usually <ip>:2376), may not work properly.
-
-  - To resolve this do following steps , Goto  Virtualbox > Preferences -> Network -> Host-only Network and remove all adapters listed.
   
-  - Remove existing docker machine 
-    ```
-    docker-machine rm default
-    ````
-  - Create new virtual machine 
-    ```
-    docker-machine create --driver virtualbox default
-    ```
-  - Set machine as 
-    ```
-    eval "$(docker-machine env default)"
-    ```    
+	  #### Docker daemon port (usually <ip>:2376), may not work properly.
+
+	  - To resolve this do following steps , Goto  Virtualbox > Preferences -> Network -> Host-only Network and remove all adapters listed.
+	  
+	  - Remove existing docker machine 
+		```
+		docker-machine rm default
+		````
+	  - Create new virtual machine 
+		```
+		docker-machine create --driver virtualbox default
+		```
+	  - Set machine as 
+		```
+		eval "$(docker-machine env default)"
+		```    
+  
+	
+	  #### Windows Docker daemon not started after machine restart 
+  
+	    
     
 ### Docker best UI
     - Ship yard https://github.com/shipyard/shipyard
