@@ -30,6 +30,16 @@ app.get('/link2',function(req,res){
 	res.render('link2');
 });
 
-
 app.listen(PORT);
 console.log(`Server running on http://localhost:${PORT}`);
+
+
+
+exports.listenServer = function(PORT){
+	app.listen(PORT);
+	
+	return `Server running on http://localhost:${PORT}`;
+	
+}
+
+
