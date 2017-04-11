@@ -19,6 +19,7 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
   - docker ps [-a include stopped containers] - to list all docker containers
   - docker rm <name|id>
   - docker build -t <your username>/<app_name> .
+  - docker-machine ssh default -- Used to SSH docker
   
   
 ### Installation
@@ -139,7 +140,7 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
 	
    #### Windows Docker daemon not started after machine restart 
    
-    - docker-machine regenerate-certs default
+  - docker-machine regenerate-certs default
 	- docker-machine restart default
 	- eval $(docker-machine env default)
 	- docker-machine ls
