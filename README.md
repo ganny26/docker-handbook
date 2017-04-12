@@ -20,6 +20,7 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
   - docker rm <name|id>
   - docker build -t <your username>/<app_name> .
   - docker-machine ssh default -- Used to SSH docker
+  - docker-machine env default -- get environment commands for your new VM
   
   
 ### Installation
