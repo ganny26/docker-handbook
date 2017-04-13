@@ -21,7 +21,12 @@ Docker is an open platform for developers and sysadmins to build, ship, and run 
   - docker build -t <your username>/<app_name> .
   - docker-machine ssh default -- Used to SSH docker
   - docker-machine env default -- get environment commands for your new VM
+  - docker-machine regenerate-certs default 
   
+# Docker making TLS false
+  -https://coderwall.com/p/siqnjg/disable-tls-on-boot2docker
+  -Create docker machine with TLS false docker-machine create -d virtualbox --engine-opt tlsverify=false node1
+
   
 ### Installation
     - Download docker toolbox
