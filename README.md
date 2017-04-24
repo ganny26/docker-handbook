@@ -154,6 +154,9 @@ https://blog.docker.com/2017/04/introducing-the-moby-project/
 	- docker-machine restart default
 	- eval $(docker-machine env default)
 	- docker-machine ls
+	
+  - docker daemon configuration
+ 	https://docs.docker.com/engine/admin/#troubleshoot-the-daemon
 
   
 ### Docker best UI
