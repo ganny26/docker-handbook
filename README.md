@@ -49,6 +49,11 @@ https://blog.docker.com/2017/04/introducing-the-moby-project/
   ```
   docker search --filter=stars=3 hello
   ```
+# Find IP address of docker linux daemon
+   ```
+   docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' f5f5384dd63b
+   ```
+
 # Build container image
 
   - To build a docker image first we need to create a file "Docker"
