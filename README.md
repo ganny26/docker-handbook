@@ -168,3 +168,9 @@ https://blog.docker.com/2017/04/introducing-the-moby-project/
     - Ship yard https://github.com/shipyard/shipyard
     - Portainer https://github.com/portainer/portainer
 
+### Usefull links for docker service configuration
+    - https://docs.docker.com/engine/installation/linux/ubuntu/#uninstall-docker
+    - https://docs.docker.com/engine/admin/
+    - https://docs.docker.com/engine/security/certificates/#understanding-the-configuration
+    - https://docs.docker.com/engine/reference/commandline/dockerd/
+
