@@ -113,7 +113,9 @@ https://blog.docker.com/2017/04/introducing-the-moby-project/
   - Below command launch the built image is 
     ```
     docker run -d --name my-running-app -p 3000:3000 my-nodejs-app  
+    sudo docker run -d  --name hostapp -p 8082:4000 hostapp
     ```
+    This binds port 4000 of the container to port 8082 on 127.0.0.1(ip) of the host machine. The Docker User Guide explains in detail how to   manipulate ports in Docker.
     
   - After running above command go to tcp url with port 3000 
     ```
