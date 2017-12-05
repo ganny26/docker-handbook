@@ -114,6 +114,7 @@ https://blog.docker.com/2017/04/introducing-the-moby-project/
     ```
     docker run -d --name my-running-app -p 3000:3000 my-nodejs-app  
     sudo docker run -d  --name hostapp -p 8082:4000 hostapp
+    docker run --name prometheus -d -p 127.0.0.1:9090:9090 name
     ```
     This binds port 4000 of the container to port 8082 on 127.0.0.1(ip) of the host machine. The Docker User Guide explains in detail how to   manipulate ports in Docker.
     
