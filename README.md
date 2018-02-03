@@ -58,39 +58,37 @@ https://blog.docker.com/2017/04/introducing-the-moby-project/
 
 # Build container image
 
-  - To build a docker image first we need to create a file "Docker"
-  ### This file consist of four major commands
+- To build a docker image first we need to create a file "Docker"
+ ### This file consist of four major commands
   
-    ```
-    FROM <image-name>:<tag>
-    RUN <command> 
-    COPY <src> <dest> 
-    EXPOSE <port> 
-    CMD -a arga value -b argb-value
-    ```
+```
+FROM <image-name>:<tag>
+RUN <command> 
+COPY <src> <dest> 
+EXPOSE <port> 
+CMD -a arga value -b argb-value
+```
    
   ### Below docker file is used to run static html files in ngnix server
    
-   #### Ngnix Server
-    
-    ```
-    FROM nginx:1.11-alpine
-    COPY index.html /usr/share/nginx/html/index.html
-    EXPOSE 80
-    CMD ["nginx", "-g", "daemon off;"]
-    ```
-   #### Node Server
-    
-    ```
-    FROM node:boron
-    RUN mkdir -p /usr/src/app
-    WORKDIR /usr/src/app
-    COPY package.json /usr/src/app/
-    RUN npm install
-    COPY . /usr/src/app
-    EXPOSE 8080
-    CMD [ "npm", "start" ]
-    ```
+#### Ngnix Server
+```
+FROM nginx:1.11-alpine
+COPY index.html /usr/share/nginx/html/index.html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+#### Node Server
+```
+FROM node:boron
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY package.json /usr/src/app/
+RUN npm install
+COPY . /usr/src/app
+EXPOSE 8080
+CMD [ "npm", "start" ]
+```
     
    
   # Build and running image into container
