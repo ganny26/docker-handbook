@@ -176,4 +176,12 @@ https://blog.docker.com/2017/04/introducing-the-moby-project/
     - https://docs.docker.com/engine/admin/
     - https://docs.docker.com/engine/security/certificates/#understanding-the-configuration
     - https://docs.docker.com/engine/reference/commandline/dockerd/
+    
+
+# Container Commands
+  - docker ps -aq - List all container id
+  - docker stop $(docker ps -aq) Stop all running containers
+  - docker rm $(docker ps -aq) Remove all containers
+  - docker rmi $(docker images -q) Remove all images
+  - docker container ls --all - List all container details
 
