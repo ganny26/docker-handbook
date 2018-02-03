@@ -10,6 +10,8 @@ Docker is now moby project for advanced containerzation movement
 
 https://blog.docker.com/2017/04/introducing-the-moby-project/
 
+
+
 # Installation
   - Install docket toolbox with kinematic https://www.docker.com/products/docker-toolbox
   - after installation in some machines virtualization need to enabled follow below link            https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/
@@ -136,25 +138,32 @@ https://blog.docker.com/2017/04/introducing-the-moby-project/
     ```
   
   
+  
   ### Troubleshooting
    
    #### Docker daemon port (usually <ip>:2376), may not work properly.
     
-	- To resolve this do following steps , Goto  Virtualbox > Preferences -> Network -> Host-only Network and remove all adapters listed.
+- To resolve this do following steps , Goto  Virtualbox > Preferences -> Network -> Host-only Network and remove all adapters listed.
 	  
-	- Remove existing docker machine 
-		```
-		docker-machine rm default
-		````
-	- Create new virtual machine 
-		```
-		docker-machine create --driver virtualbox default
-		```
-	- Set machine as 
-		```
-		eval "$(docker-machine env default)"
-		```    
+- Remove existing docker machine 
+    ```sh
+    $ docker-machine rm default
+    ```
+- Create new virtual machine 
+	```
+	docker-machine create --driver virtualbox default
+	```
 
+- Create new virtual machine 
+	```
+	docker-machine create --driver virtualbox default
+	```
+- Set machine as 
+	```
+	eval "$(docker-machine env default)"
+	```
+	
+	
 	
    #### Windows Docker daemon not started after machine restart 
    
