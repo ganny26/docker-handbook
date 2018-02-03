@@ -191,4 +191,6 @@ CMD [ "npm", "start" ]
   - docker rm $(docker ps -aq) Remove all containers
   - docker rmi $(docker images -q) Remove all images
   - docker container ls --all - List all container details
+  - docker update --restart=always <container id> - Run docker container automatically
+
 
