@@ -192,5 +192,7 @@ CMD [ "npm", "start" ]
   - docker rmi $(docker images -q) Remove all images
   - docker container ls --all - List all container details
   - docker update --restart=always (container-id) - Run docker container automatically
-
-
+  
+# Swarm Commands
+  - docker swarm init
+  - docker node ls
