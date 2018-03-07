@@ -196,3 +196,7 @@ CMD [ "npm", "start" ]
 # Swarm Commands
   - docker swarm init
   - docker node ls
+
+# Uninstall Docker 
+  - sudo apt-get purge docker-ce
+  - sudo rm -rf /var/lib/docker
