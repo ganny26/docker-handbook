@@ -43,7 +43,7 @@ https://blog.docker.com/2017/04/introducing-the-moby-project/
     
 ### Terminal 
 
-![Alt text](terminal.PNG "https://www.docker.com")
+![Alt text](terminal.png "https://www.docker.com")
 
 # Launching Containers
 
