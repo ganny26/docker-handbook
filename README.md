@@ -135,6 +135,16 @@ CMD [ "npm", "start" ]
     df289bf2768a        my-nodejs-app:latest   "npm start"         2 minutes ago       Up 2 minutes        0.0.0.0:32768->7899/tcp   my-nodejs-app-2
     ```
   
+# Containers are Always Running with Docker’s Restart Policy
+
+- Automatically restart crashed containers by specifying a restart policy 
+
+Even though our application crashes continues to exit with an error, Docker is continuously restarting the container every time it exits.
+
+ ```sh
+ $ sudo docker run -d —name hello-app —restart always hello-app 
+ ```
+
   
   
   ### Troubleshooting
