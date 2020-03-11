@@ -16,6 +16,23 @@ https://blog.docker.com/2017/04/introducing-the-moby-project/
   - Install docket toolbox with kinematic https://www.docker.com/products/docker-toolbox
   - after installation in some machines virtualization need to enabled follow below link            https://blogs.technet.microsoft.com/canitpro/2015/09/08/step-by-step-enabling-hyper-v-for-use-on-windows-10/
   - Now start docker console
+  
+## Ubuntu
+  
+Use below shell script to install docker on any ubuntu machines	   
+wget -nv -O - https://get.docker.com/ | sh
+
+After installation add current user to docker group
+
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+su -s ${USER}
+
+Verify docker by pulling hello-world image
+docker run hello-world
+
+For more troubleshooting in linux refer this [link](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
+   
 
 # Basic docker commands
 
