@@ -223,6 +223,8 @@ Even though our application crashes continues to exit with an error, Docker is c
   - docker rmi $(docker images -q) Remove all images
   - docker container ls --all - List all container details
   - docker update --restart=always (container-id) - Run docker container automatically
+  - docker exec it <continaer id> /bin/bash
+  - docker run -it image_name sh
   
 # Swarm Commands
   - docker swarm init
@@ -231,3 +233,8 @@ Even though our application crashes continues to exit with an error, Docker is c
 # Uninstall Docker 
   - sudo apt-get purge docker-ce
   - sudo rm -rf /var/lib/docker
+  
+# References
+  - https://stackoverflow.com/questions/44769315/how-to-see-docker-image-contents
+  - https://phase2.github.io/devtools/common-tasks/ssh-into-a-container/
+
